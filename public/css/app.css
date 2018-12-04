@@ -10496,9 +10496,8 @@ body {
   font-size: 56px;
 }
 
-/******************************** CTA OPTIONS ***********************************/
-
-.mod01 {
+.mod01,
+.xmas01 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10510,6 +10509,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+/******************************** CTA OPTIONS ***********************************/
 
 .mod01 .cta-question-buttons {
   border: 1px solid #c7c7c7;
@@ -10556,19 +10557,6 @@ body {
   .mod01 .cta-question-buttons {
     width: unset;
   }
-}
-
-.xmas01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .xmas01 .cta-question-buttons {

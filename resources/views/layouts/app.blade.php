@@ -18,9 +18,9 @@
 
 <body class="page-template page-template-edge-no-ads-FB page-template-edge-no-ads-FB-php page page-id-1346">
     @include('partials.navbar')
-    {{-- <div class="container"> --}}
+    <div class="wrapper">
         @yield('content')
-    {{-- </div> --}}
+    </div>
 </body>
 
 </html>
