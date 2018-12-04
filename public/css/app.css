@@ -10609,6 +10609,7 @@ body {
   -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 26, 0, 0.8);
           box-shadow: 3px 3px 2px 0px rgba(0, 26, 0, 0.8);
   margin-right: 2rem;
+  text-align: center;
 }
 
 .xmas01 .cta-button:hover {
@@ -10617,17 +10618,6 @@ body {
   color: white;
   -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
-}
-
-.xmas01 .cta-button__animated::before {
-  content: none;
-}
-
-.xmas01 .cta-button__animated::before {
-  left: calc(0% - 4.2em);
-  -webkit-transition: left 600ms ease-in-out;
-  transition: left 600ms ease-in-out;
-  content: '';
 }
 
 @media screen and (min-width: 768px) {

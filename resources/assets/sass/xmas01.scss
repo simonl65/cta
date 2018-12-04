@@ -49,9 +49,8 @@ $cta-min-width: 735px;
   background-color: rgba($button__color, .9);
   max-width: 300px;
   box-shadow: 3px 3px 2px 0px rgba(darken($button__color, 20%), 0.8);
-  // position: absolute;
-  // margin-right: 0;
   margin-right: 2rem;
+  text-align: center;
 }
 
 .cta-button:hover {
@@ -59,16 +58,6 @@ $cta-min-width: 735px;
   border-color: lighten($button__color, 10%);
   color: white;
   transition: all 150ms linear;
-}
-
-.cta-button__animated::before {
-  content: none;
-}
-
-.cta-button__animated::before {
-  left: calc(0% - 4.2em);
-  transition: left 600ms ease-in-out;
-  content: '';
 }
 
 @media screen and (min-width: 768px) {
@@ -99,7 +88,6 @@ $cta-min-width: 735px;
     }
 
     .cta-question-buttons__disclaimer {
-      // background: none;
       margin: 0;
       left: 0;
     }
