@@ -49,7 +49,7 @@ $cta-min-width: 735px;
   background-color: rgba($button__color, .9);
   max-width: 300px;
   box-shadow: 3px 3px 2px 0px rgba(darken($button__color, 20%), 0.8);
-  margin-right: 2rem;
+  margin-right: 32px;
   text-align: center;
 }
 
@@ -57,7 +57,14 @@ $cta-min-width: 735px;
   background: lighten($button__color, 10%);
   border-color: lighten($button__color, 10%);
   color: white;
-  transition: all 150ms linear;
+  transition: all 50ms linear;
+}
+
+.cta-button:active {
+  box-shadow: none;
+  margin-top: 3px;
+  margin-right: 29px;
+  transition: all 50ms linear;
 }
 
 @media screen and (min-width: 768px) {

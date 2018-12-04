@@ -10538,19 +10538,18 @@ body {
   background: #75b8a0;
   border-color: #75b8a0;
   color: white;
-  -webkit-transition: all 150ms linear;
-  transition: all 150ms linear;
+  -webkit-transition: all 50ms linear;
+  transition: all 50ms linear;
 }
 
-.mod01 .cta-button--animated::before {
-  content: none;
-}
-
-.mod01 .cta-button--animated::before {
-  left: calc(0% - 4.2em);
-  -webkit-transition: left 600ms ease-in-out;
-  transition: left 600ms ease-in-out;
-  content: '';
+.mod01 .cta-button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 3px;
+  margin-bottom: -3px;
+  margin-left: 3px;
+  -webkit-transition: all 50ms linear;
+  transition: all 50ms linear;
 }
 
 @media screen and (min-width: 801px) {
@@ -10608,7 +10607,7 @@ body {
   max-width: 300px;
   -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 26, 0, 0.8);
           box-shadow: 3px 3px 2px 0px rgba(0, 26, 0, 0.8);
-  margin-right: 2rem;
+  margin-right: 32px;
   text-align: center;
 }
 
@@ -10616,8 +10615,17 @@ body {
   background: #00b300;
   border-color: #00b300;
   color: white;
-  -webkit-transition: all 150ms linear;
-  transition: all 150ms linear;
+  -webkit-transition: all 50ms linear;
+  transition: all 50ms linear;
+}
+
+.xmas01 .cta-button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 3px;
+  margin-right: 29px;
+  -webkit-transition: all 50ms linear;
+  transition: all 50ms linear;
 }
 
 @media screen and (min-width: 768px) {
