@@ -43,3 +43,9 @@ $cta--color: $NavyBlue;
       width: unset;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .cta-question-buttons {
+      margin: 1%;
+  }
+}

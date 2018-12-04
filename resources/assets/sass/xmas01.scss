@@ -81,6 +81,12 @@ $cta-min-width: 735px;
   }
 }
 
+@media screen and (max-width: 800px) {
+  .cta-question-buttons {
+      margin: 1%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .cta-question-buttons {
     .cta-question-buttons__content {
