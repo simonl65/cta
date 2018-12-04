@@ -1,0 +1,116 @@
+$button__color: green;
+$cta__color: rgb(213, 0, 0);
+$cta-min-width: 735px;
+
+.cta-question-buttons {
+  position: relative;
+  border: 1px solid $LightGrey;
+  background: $cta__color;
+}
+
+.cta-question-buttons__title {
+  background-color: $cta__color;
+}
+
+.cta-question-buttons__content {
+  background: white;
+  color: white;
+  background: url("/img/xmas-relax.jpeg") top left / 100% auto no-repeat;
+  min-height: 470px;
+  text-align: right;
+}
+
+.cta-question-buttons__narrative {
+  margin-top: 10px;
+  text-align: right;
+  margin-right: 0;
+  padding-right: 35px;
+  font-size: 1.35em;
+  background: rgba(black, 0.3);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+
+  span::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+.cta-question-buttons__disclaimer {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  background: rgba(red, 0.7);
+  padding: .75rem;
+}
+
+.cta-button {
+  border-color: $button__color;
+  border-radius: 7px;
+  background-color: rgba($button__color, .9);
+  max-width: 300px;
+  box-shadow: 3px 3px 2px 0px rgba(darken($button__color, 20%), 0.8);
+  // position: absolute;
+  // margin-right: 0;
+  margin-right: 2rem;
+}
+
+.cta-button:hover {
+  background: lighten($button__color, 10%);
+  border-color: lighten($button__color, 10%);
+  color: white;
+  transition: all 150ms linear;
+}
+
+.cta-button__animated::before {
+  content: none;
+}
+
+.cta-button__animated::before {
+  left: calc(0% - 4.2em);
+  transition: left 600ms ease-in-out;
+  content: '';
+}
+
+@media screen and (min-width: 768px) {
+  .cta-question-buttons {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cta-question-buttons {
+    .cta-question-buttons__content {
+      background: url("/img/xmas-relax.jpeg") top right / 110% auto no-repeat;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cta-question-buttons {
+    .cta-question-buttons__content {
+      background: url("/img/xmas-relax.jpeg") top right / 150% auto no-repeat;
+      min-height: 310px;
+      text-align: center;
+    }
+
+    & .cta-button {
+      position: relative !important;
+      margin-right: inherit;
+    }
+
+    .cta-question-buttons__disclaimer {
+      // background: none;
+      margin: 0;
+      left: 0;
+    }
+  }
+
+  .cta-question-buttons__narrative {
+    text-align: center;
+    padding: 0;
+
+    span::before {
+      content: "";
+    }
+  }
+}
