@@ -20,4 +20,9 @@ class PagesController extends Controller
     {
         return view('pages.xmas01');
     }
+
+    public function dontmissout()
+    {
+        return view('pages.dontmissout');
+    }
 }

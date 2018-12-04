@@ -9,6 +9,7 @@
         <ul class="list-group">
             <a href="/mod01" class="list-group-item">Modified standard CTA</a>
             <a href="/xmas01" class="list-group-item">Have a Relaxing Xmas</a>
+            <a href="/dontmissout" class="list-group-item">Don't Miss Out!</a>
         </ul>
     </div>
 </div>

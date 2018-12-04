@@ -16,3 +16,4 @@ use Tests\Unit\Adapters\LaravelTest;
 Route::get('/', 'PagesController@index');
 Route::get('/mod01', 'PagesController@mod01');
 Route::get('/xmas01', 'PagesController@xmas01');
+Route::get('/dontmissout', 'PagesController@dontmissout');
