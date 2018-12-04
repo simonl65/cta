@@ -1,0 +1,46 @@
+$button--color: $Green;
+$cta--color: $NavyBlue;
+
+.cta-question-buttons {
+  border: 1px solid $LightGrey;
+}
+
+.cta-question-buttons__title {
+    background-color: $cta--color;
+}
+
+.cta-question-buttons__content {
+  background: white;
+  color: $cta--color;
+}
+
+.cta-button {
+  border-color: $button--color;
+  border-radius: 3px;
+  background-color: $button--color;
+  max-width: unset;
+  box-shadow: 3px 3px 2px 0px darken($LightGrey, 50%);
+}
+
+.cta-button:hover {
+  background: lighten($button--color, 10%);
+  border-color: lighten($button--color, 10%);
+  color: white;
+  transition: all 150ms linear;
+}
+
+.cta-button--animated::before {
+  content: none;
+}
+
+.cta-button--animated::before {
+  left: calc(0% - 4.2em);
+  transition: left 600ms ease-in-out;
+  content: '';
+}
+
+@media screen and (min-width: 801px) {
+  .cta-question-buttons {
+      width: unset;
+  }
+}
